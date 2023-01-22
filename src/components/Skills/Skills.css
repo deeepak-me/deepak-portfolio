@@ -1,6 +1,6 @@
 .skills__container{
     grid-template-columns: repeat(1,1fr);
-    columns: 3rem;
+    /* columns: 3rem; */
     justify-content: center;
 }
 
@@ -8,11 +8,11 @@
     background-color: #000;
     border: 1px solid rgba(254, 254, 254, .6);
     padding: 2rem 4rem;
-    border-radius: 1,25rem;
+    border-radius: 1.25rem;
 }
 
 .skills__title{
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -21,26 +21,97 @@
 .skills__box{
     display: flex;
     justify-content: center;
-    column-gap: 2.5rem;
+    column-gap: 2rem;
 }
+
+/* .skills__box{
+    grid-template-columns: repeat(4,1fr);
+    columns: 4;
+    column-gap: 2rem;
+    justify-content:center;
+    column-gap: 2.5rem;
+} */
 
 .skills__group{
-    display: grid;
-    align-items: flex-start;
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: flex-start; */
     row-gap: 1rem;
+    background-color: #000;
+    border: 1px solid rgba(254, 254, 254, .6);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+    /* width: 240px; */
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
-.skills__data{
+.skills__group:hover{
+    background:  linear-gradient(to right top, #4e73e6, #567de7, #6087e8, #6b91e8, #769be8, #6fa7ef, #6ab3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    color: #000;
+}
+
+/* .skills__data{
     display: flex;
     column-gap: 0.5rem;
-}
+} */
 
 .skills__name{
     font-size: 1rem;
     font-weight: 500;
     line-height: 18px;
+    margin-bottom: .25rem;
 }
 
 .skills__level{
     font-size: .625rem;
 }
+
+
+
+@media screen and (max-width:992px){
+    .skills__container{
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+    }
+
+    .skills__box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+
+    .skills__group{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 1rem;
+        padding: 2rem 4rem;
+        border-radius: 1.25rem;
+        
+    }
+  }
+  
+  @media screen and (max-width:768px){
+  
+  }
+  
+  @media screen and (max-width:576px){
+        .skills__container{
+            grid-template-columns: 1fr;
+        }
+
+        .skills__content{
+            padding: 1.5rem;
+        }
+  }
+  
+  @media screen and (max-width:350px){
+    .skills__box{
+        column-gap: 1.25rem;
+    }
+    
+  }
