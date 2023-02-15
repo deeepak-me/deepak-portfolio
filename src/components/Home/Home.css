@@ -1,0 +1,190 @@
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .home .content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+  
+  .home .content h3,
+  h1,
+  h2 {
+    color: #fff;
+  }
+  
+  .hero-img-wrap {
+    /* will-change: opacity;
+    animation: heroImgWrap 0.8s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-delay: 0.8s; */
+    position: relative;
+    z-index: 2;
+    width: 20vw;
+    height: 20vw;
+    max-height: 30vh;
+    max-width: 30vh;
+    min-height: 300px;
+    min-width: 300px;
+    /* margin-bottom: 64px; */
+    margin-right: 64px;
+    /* display: block; */
+  }
+  
+  .hero-img {
+    /* will-change: transform;
+    animation: heroImgScale 0.8s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-delay: 0.8s; */
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .hero-img-container {
+
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    border: 1px solid hsla(0, 0%, 100%, 0.3);
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 84%, 0.5);
+    -o-object-fit: cover;
+    object-fit: cover;
+    
+  }
+  
+  .hero-img-shadow-wrap {
+    position: absolute;
+    left: -20%;
+    top: -20%;
+    right: 0;
+    bottom: 0;
+    width: 140%;
+    height: 140%;
+    padding: 20%;
+    border-radius: 50%;
+    /* -webkit-filter: blur(20px); */
+    filter: blur(20px);
+  }
+  
+  /* .hero-img-shadow-wrap.hero-img-shadow-wrap--intro {
+    z-index: 1;
+  } */
+  
+  .hero-img-shadow {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* background-image: radial-gradient(
+        circle farthest-side at 100% 100%,
+        #9873ff,
+        rgba(152, 115, 255, 0)
+      ),
+      radial-gradient(
+        circle farthest-side at 100% 0,
+        #0ba5f7,
+        rgba(85, 196, 255, 0)
+      ),
+      radial-gradient(circle farthest-side at 0 0, #ff763c, rgba(255, 176, 60, 0)),
+      radial-gradient(
+        circle farthest-side at 0 100%,
+        #ff5aaa,
+        rgba(255, 90, 170, 0)
+      ); */
+    background-image: radial-gradient(
+        circle farthest-side at 100% 100%,
+        #833ab4,
+        rgba(176, 115, 255, 0)
+      ),
+      radial-gradient(
+        circle farthest-side at 100% 0,
+        #fd1d1d,
+        rgba(255, 85, 85, 0)
+      ),
+      radial-gradient(circle farthest-side at 0 0, #ff763c, rgba(255, 176, 60, 0)),
+      radial-gradient(
+        circle farthest-side at 0 100%,
+        #fcb045,
+        rgba(255, 197, 90, 0)
+      );
+  }
+  
+  #hero-img-shadow-1 {
+    will-change: opacity;
+    animation: heroImgShadow1 0.8s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-delay: 1.5s;
+  }
+  @keyframes heroImgShadow1 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #hero-img-shadow-2 {
+    will-change: opacity, transform;
+    animation: heroImgShadow2 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes heroImgShadow2 {
+    0% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+    99% {
+      opacity: 0;
+      transform: scale(6, 6);
+      height: 140%;
+    }
+    100% {
+      height: 0%;
+      opacity: 0;
+    }
+  }
+  
+  .hero-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 44px;
+  }
+  
+  .hero-description h3 {
+    font-size: 24px;
+    text-transform: lowercase;
+    margin-left: -394px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  
+  .hero-description h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-description h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
